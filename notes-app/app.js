@@ -11,3 +11,12 @@ console.log(sum)
 const getNotes = require('./src/notes.js')
 const message = getNotes()
 console.log(message)
+
+// 4.0: Importing npm modules
+const validator = require('validator')
+console.log(validator.isEmail('brian@lol.com')) // valid email
+console.log(validator.isEmail('brianlol.com'))  // invalid email
+console.log(validator.isURL('https://brianl.me'))
+
+const chalk = require('chalk')
+console.log(chalk.green('This is green text.'))
