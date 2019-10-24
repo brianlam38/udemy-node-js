@@ -19,4 +19,9 @@ console.log(validator.isEmail('brianlol.com'))  // invalid email
 console.log(validator.isURL('https://brianl.me'))
 
 const chalk = require('chalk')
-console.log(chalk.green('This is green text.'))
+const greenMessage = chalk.green('This is a message.')
+console.log(greenMessage)
+const greenBoldMessage = chalk.bold(greenMessage)
+console.log(greenBoldMessage)
+const greenBoldUnderlineMessage = chalk.underline(greenBoldMessage)
+console.log(greenBoldUnderlineMessage)
