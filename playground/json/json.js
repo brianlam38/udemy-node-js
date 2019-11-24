@@ -12,9 +12,9 @@ const bookJSON = JSON.stringify(book)
 const parsedData = JSON.parse(bookJSON)
 
 // create json file
-fs.writeFileSync('1-json.json', bookJSON)
+fs.writeFileSync('file.json', bookJSON)
 
-const dataBuffer = fs.readFileSync('1-json.json')  // buffer form
+const dataBuffer = fs.readFileSync('file.json')  // buffer form
 const dataStr = dataBuffer.toString()              // string form
 const data = JSON.parse(dataStr)                   // JSON object form
 console.log('TITLE: ' + data.title + '\nAUTHOR: ' + data.author)
